@@ -43,6 +43,7 @@ elseif (GitHub MATCHES [Oo][Nn])
     message("Checking out hash-library...")
     execute_process(COMMAND ${GIT_EXECUTABLE} clone https://github.com/JusticeRage/hash-library.git external/hash-library)
     execute_process(COMMAND ${GIT_EXECUTABLE} reset --hard c40fee656aabddf61c2b08ee8ac2e58f9234cf7d WORKING_DIRECTORY external/hash-library)endif()
+endif()
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
