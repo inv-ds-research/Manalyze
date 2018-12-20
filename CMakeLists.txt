@@ -42,7 +42,7 @@ elseif (GitHub MATCHES [Oo][Nn])
     execute_process(COMMAND ${GIT_EXECUTABLE} reset --hard 272160615ceb6b30aafa331c338e89c37355b7ce WORKING_DIRECTORY external/yara)
     message("Checking out hash-library...")
     execute_process(COMMAND ${GIT_EXECUTABLE} clone https://github.com/JusticeRage/hash-library.git external/hash-library)
-    execute_process(COMMAND ${GIT_EXECUTABLE} reset --hard c40fee656aabddf61c2b08ee8ac2e58f9234cf7d WORKING_DIRECTORY external/hash-library)endif()
+    execute_process(COMMAND ${GIT_EXECUTABLE} reset --hard c40fee656aabddf61c2b08ee8ac2e58f9234cf7d WORKING_DIRECTORY external/hash-library)
 endif()
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
